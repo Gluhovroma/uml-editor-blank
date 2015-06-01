@@ -1,0 +1,71 @@
+<html lang="en">
+  	<head>
+
+  		<title>UML-editor</title>
+  		<meta charset='utf-8'><meta http-equiv='Content-Type'>
+  		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">	    
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/stylish-portfolio.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/font-awesome.css">
+	    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" href="css/joint.css" />	 	    	 	
+	 	<link rel="stylesheet" type="text/css" href="css/app.css">	 	
+		<script src="libs/joint.js"></script>
+		<script src="libs/jquery-1.11.3.min.js"></script>	
+		<script src="js/joint.shapes.uml.js"></script>				 	
+  	</head>
+  	<body> 
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+		        <div class="container">
+		            <div class="navbar-header">		                
+		                <div class="navbar-brand">
+		                	UML редактор
+		                </div>
+		                
+		            </div>		           
+		        </div>
+		    </div>
+    	<div class="jumbotron">       
+        	<div class="body-container">
+        		<div class="uml-full-container">
+        			<div class="uml-container">
+        				<button class=" btn mouse" onclick="refreshConditions()">        				      					
+        				</button>
+        				<button class="btn class" onclick="addClass()">
+        					Class          					
+        				</button>
+        				<button class="btn assosiation" onclick="addAssociation()">
+        					Association	
+        				</button>        				
+        				<button class="btn generalization" onclick="addGeneralization()">
+        					Generalization	
+        				</button>        				      				          				
+        			</div>
+        		</div>
+        		<div class="paper-container">
+        			<div class="paper" id="paper"></div>
+        		</div>        		
+        		<div class="clearfix"></div>
+        		<div class="accordion-container">        			
+	        		<input id = "className" type="text" size="20" style="display: block; margin: 0px 0px 7px 0px;">
+	        		<button class="btn">Сохранить</button>
+        		</div>
+        	</div>
+        </div>
+    	<hr />
+	    <div id="footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <p class="text-muted">
+	                    	
+	                    </p>
+	                </div>
+	                <div class="col-md-6">	                    
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		   	<script src="js/main.js"></script>		
+    </body>
+</html>
